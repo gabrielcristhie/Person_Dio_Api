@@ -28,7 +28,7 @@ Para executar o banco de dados copie o link do localhost e
 ```
 http://localhost:8080/h2-console
 ```
-Após o deploy no Heroku, o modelo de request e response serão os seguintes:
+Após o deploy no Heroku, o modelo de POST é o seguinte:
 ```
 {
     "firstName": "Nome",
