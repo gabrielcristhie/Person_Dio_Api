@@ -1,8 +1,8 @@
 <h2>Digital Innovation: Expert class - Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot</h2>
 
-Nesta live coding vamos desenvolver um pequeno sistema para o gerenciamento de pessoas de uma empresa através de uma API REST, criada com o Spring Boot.
+Nesta live coding desenvolvemos um pequeno sistema para o gerenciamento de pessoas de uma empresa através de uma API REST, criada com o Spring Boot.
 
-Durante a sessão, serão desenvolvidos e abordados os seguintes tópicos:
+Durante a sessão, foram desenvolvidos e abordados os seguintes tópicos:
 
 * Setup inicial de projeto com o Spring Boot Initialzr 
 * Criação de modelo de dados para o mapeamento de entidades em bancos de dados
@@ -23,6 +23,25 @@ Após executar o comando acima, basta apenas abrir o seguinte endereço e visual
 http://localhost:8080/api/v1/people
 ```
 
+Para executar o banco de dados copie o link do localhost e 
+
+```
+http://localhost:8080/h2-console
+```
+Após o deploy no Heroku, o modelo de request e response serão os seguintes:
+```
+{
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "cpf": "000.000.000-00", //O cpf deve ser um cpf real
+    "birthDate": "00-00-0000",
+    "phones": [
+        {
+            "type":"MOBILE",
+            "number": "(62)123456789"
+        }
+    ]
+``` 
 
 São necessários os seguintes pré-requisitos para a execução do projeto desenvolvido durante a aula:
 
